@@ -19,7 +19,6 @@ add_custom_command(
     TARGET ${PROJECT_NAME} POST_BUILD 
     COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_BINARY_DIR}/external/sfml/lib/sfml-audio-2.dll ${CMAKE_BINARY_DIR}
     COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_BINARY_DIR}/external/sfml/lib/sfml-graphics-2.dll ${CMAKE_BINARY_DIR}
-    COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_BINARY_DIR}/external/sfml/lib/sfml-network-2.dll ${CMAKE_BINARY_DIR}
     COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_BINARY_DIR}/external/sfml/lib/sfml-system-2.dll ${CMAKE_BINARY_DIR}
     COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_BINARY_DIR}/external/sfml/lib/sfml-window-2.dll ${CMAKE_BINARY_DIR}
 )
